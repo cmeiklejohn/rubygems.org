@@ -1,7 +1,7 @@
 source :rubygems
-gem "rails", "3.0.5"
+gem "rails", "3.0.9"
 gem "rack",  "1.2.2"
-gem "mail",  "2.2.15"
+gem "mail",  "2.2.19"
 
 gem "clearance",         "0.9.0.rc9"
 gem "fog",               "0.7.0"
