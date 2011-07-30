@@ -35,5 +35,7 @@ module Gemcutter
 
     config.plugins = [:dynamic_form]
     config.plugins << :heroku_asset_cacher if $rubygems_config[:asset_cacher]
+
+    config.assets.enabled = true
   end
 end
