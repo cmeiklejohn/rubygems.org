@@ -6,6 +6,8 @@ Gemcutter::Application.configure do
   config.active_support.deprecation = :notify
   config.serve_static_assets = $rubygems_config[:asset_cacher]
   config.i18n.fallbacks = true
+  config.assets.js_compressor  = :uglifier
+  config.assets.css_compressor = :scss
 end
 
 require Rails.root.join("config", "secret") if Rails.root.join("config", "secret.rb").file?
