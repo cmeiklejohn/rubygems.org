@@ -66,4 +66,11 @@ group :test do
   gem 'shoulda'
   gem 'timecop'
   gem 'webmock'
+  gem "guard-test"
+  gem "guard-cucumber"
+  gem "guard-rails-assets"
+  gem 'rb-inotify', :require => false if RUBY_PLATFORM =~ /linux/i
+  gem 'libnotify',  :require => false if RUBY_PLATFORM =~ /linux/i
+  gem "rb-fsevent", :require => false if RUBY_PLATFORM =~ /darwin/i
+  gem "growl",      :require => false if RUBY_PLATFORM =~ /darwin/i
 end
