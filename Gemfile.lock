@@ -231,7 +231,7 @@ DEPENDENCIES
   rack
   rack-maintenance
   rack-test
-  rails (= 3.1.0.rc5)
+  rails (>= 3.1.0.rc5)
   rdoc
   redgreen
   redis
@@ -241,6 +241,7 @@ DEPENDENCIES
   shoulda
   silent-postgres
   sinatra
+  sprockets
   system_timer
   therubyracer
   timecop

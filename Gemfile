@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '= 3.1.0.rc5'
+gem 'rails', '>= 3.1.0.rc5'
 
 gem 'clearance', '~> 0.12.0'
 gem 'fog'
@@ -26,9 +26,13 @@ gem 'json'
 gem 'sass'
 gem 'coffee-script'
 gem 'uglifier'
+gem 'sprockets'
 gem 'jquery-rails'
-gem 'execjs'
-gem 'therubyracer'
+
+group :production do 
+  gem 'execjs'
+  gem 'therubyracer'
+end
 
 platforms :ruby_18 do
   gem 'system_timer'
