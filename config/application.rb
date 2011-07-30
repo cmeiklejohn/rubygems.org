@@ -6,6 +6,7 @@ require 'action_controller/railtie'
 unless Rails.env.maintenance?
   require 'rails/test_unit/railtie'
   require 'action_mailer/railtie'
+  require 'sprockets/railtie'
   require 'active_record/railtie'
 end
 
